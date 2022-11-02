@@ -7,7 +7,9 @@ I started using Skaffold for all new projects in my current position, well for a
 Let’s get our minikube cluster setup. Install minikube locally by using homebrew:
 
 ```$ brew install minikube```
+
 Make sure it was installed successfully:
 
-$ minikube version
+```$ minikube version```
+
 Output:
