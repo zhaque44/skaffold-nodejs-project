@@ -13,3 +13,27 @@ Make sure it was installed successfully:
 ```$ minikube version```
 
 Output:
+```
+minikube version: v1.27.1
+commit: fe869b5d4da11ba318eb84a3ac00f336411de7ba
+```
+Start minikube:
+```
+$ minikube start
+```
+Use the minikube addon to enable the ingress nginx controller:
+```
+$ minikube addons enable ingress
+```
+Install skaffold on your machine:
+```
+$ curl -Lo skaffold https://storage.googleapis.com/skaffold/builds/latest/skaffold-darwin-amd64 && \ sudo install skaffold /usr/local/bin/
+```
+Validate that the install was successful:
+```
+$ skaffold version
+```
+Bringing up your local cluster:
+```
+skaffold dev --port-forward
+```
