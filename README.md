@@ -27,7 +27,7 @@ $ minikube addons enable ingress
 ```
 Install skaffold on your machine:
 ```
-$ curl -Lo skaffold https://storage.googleapis.com/skaffold/builds/latest/skaffold-darwin-amd64 && \ sudo install skaffold /usr/local/bin/
+$ brew install skaffold
 ```
 Validate that the install was successful:
 ```
