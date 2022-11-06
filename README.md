@@ -33,7 +33,15 @@ Validate that the install was successful:
 ```
 $ skaffold version
 ```
+Now run the init command:
+```
+$ skaffold init 
+```
+The init command tries to bootstrap your projects and setting it up to deploy with cli tools such as:
+```
+kubectl & kustomize
+```
 Bringing up your local cluster:
 ```
-skaffold dev --port-forward
+$ skaffold dev --port-forward
 ```
