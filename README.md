@@ -19,7 +19,7 @@ commit: fe869b5d4da11ba318eb84a3ac00f336411de7ba
 ```
 Start minikube:
 ```
-$ minikube start
+$ minikube start --feature-gates=EphemeralContainers=true
 ```
 Use the minikube addon to enable the ingress nginx controller:
 ```
